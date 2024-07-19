@@ -3,5 +3,6 @@
 // Function declaration
 typedef enum {STRING, POINTER} PrintFormat;
 
-void printString(const char *myptr);
-void printString(const char *myptr, PrintFormat format);
+void printString(const char *ptrChar);
+
+void printString_Format(const char *ptrChar, PrintFormat format);

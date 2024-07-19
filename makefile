@@ -5,7 +5,6 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 # Source files
-# List of source files
 SRCS = main.c string_utils.c
 
 # Object files

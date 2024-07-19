@@ -2,23 +2,18 @@
 #include "string_utils.h"
 
 // Function declaration
-void internalFunction();
 
 // Function definition
-void printString(const char *str, PrintFormat format) {
+void printString_Format(const char *ptrChar, PrintFormat format) {
   if (format == STRING) {
-    printf("%s\n", str);
+    printf("%s\n", ptrChar);
   } else if (format == POINTER) {
-    printf("%p\n", str);
+    printf("%p\n", ptrChar);
   }
-  internalFunction();
 }
 
-void printString(const char *str) {
-  printString(str, STRING);
+void printString(const char *ptrChar) {
+  printString_Format(ptrChar, STRING);
 }
 
 // Internal function definition
-void internalFunction() {
-  printf("   This is an internal function\n");
-}
